@@ -9,20 +9,19 @@
 		<link rel="apple-touch-icon" href="img/icon-128.png" />
 		<meta name="theme-color" content="#00FE9C" />
 		<meta name="apple-mobile-web-app-status-bar" content="#02BC74" />
-		<title>Salus - Home</title>
+		<title>Salus - Registrierung</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		/>
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/register.css" />
 	</head>
-
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#">
 				<img
-					src="img/icon-128.png"
+					src="../img/icon-128.png"
 					width="30"
 					height="30"
 					class="d-inline-block align-top"
@@ -61,71 +60,27 @@
 				</ul>
 			</div>
 		</nav>
-
-		<div class="container mt-4">
-			<h1 class="mb-4">Willkommen, [Benutzername]!</h1>
-
-			<!-- Medikamentenübersicht -->
-			<div class="mb-4">
-				<h2>Ihre Medikamente</h2>
-				<!-- Beispiel für ein Medikament -->
-				<div class="card mb-3">
-					<div class="card-body">
-						<h5 class="card-title">Aspirin</h5>
-						<p class="card-text">Dosierung: 2 Tabletten täglich</p>
-					</div>
+		<div class="container">
+			<h1 class="text-center">Registrierung</h1>
+			<form id="register-form">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" class="form-control" required />
 				</div>
-			</div>
-
-			<!-- Erinnerungen -->
-			<div class="mb-4">
-				<h2>Nächste Erinnerungen</h2>
-				<!-- Beispiel für eine Medikamentenerinnerung -->
-				<div class="card mb-3">
-					<div class="card-body">
-						<h5 class="card-title">Aspirin</h5>
-						<p class="card-text">Nächste Dosis: Heute um 18:00 Uhr</p>
-					</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" class="form-control" required />
 				</div>
-				<!-- Beispiel für einen Arzttermin -->
-				<div class="card mb-3">
-					<div class="card-body">
-						<h5 class="card-title">Arzttermin</h5>
-						<p class="card-text">Termin: 22. Mai um 15:30 Uhr</p>
-					</div>
+				<div class="form-group">
+					<label for="password">Passwort:</label>
+					<input type="password" id="password" class="form-control" required />
 				</div>
-			</div>
-
-			<!-- Apothekensuche -->
-			<div class="mb-4">
-				<h2>Apothekensuche</h2>
-				<input
-					class="form-control"
-					type="text"
-					placeholder="Suchen Sie nach Apotheken..."
-				/>
-			</div>
-
-			<!-- Medikamenteninformationen -->
-			<div class="mb-4">
-				<h2>Medikamenteninformationen</h2>
-				<input
-					class="form-control"
-					type="text"
-					placeholder="Suchen Sie nach Medikamenteninformationen..."
-				/>
-			</div>
+				<div class="form-group text-center">
+					<input type="submit" value="Registrieren" class="btn btn-primary" />
+				</div>
+			</form>
 		</div>
-
-		<!-- Fußzeile -->
-		<footer class="footer mt-auto py-3 bg-light">
-			<div class="container text-center">
-				<span class="text-muted"
-					>© 2023 Salus App. Alle Rechte vorbehalten.</span
-				>
-			</div>
-		</footer>
-		<script src="js/app.js"></script>
+		<script src="../js/server.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</body>
