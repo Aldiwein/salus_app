@@ -1,92 +1,84 @@
 /* Allgemeine Stile */
 body {
-	font-family: Arial, sans-serif;
-	color: #333;
-	background-color: #fff;
+    font-family: 'Roboto', sans-serif; /* Verwendung einer moderneren Schriftart */
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Hinzufügen von Übergangsanimationen */
 }
 
 /* Haupt- und Akzentfarben */
 :root {
-	--main-color: #98ff98; /* Minzgrün */
-	--accent-color: #ff7f50; /* Orange */
+    --main-color: #1a202c; /* Dunkelgrau für ein dunkles Thema */
+    --accent-color: #f56565; /* Lebhaftes Rosa für einen modernen Look */
 }
 
 /* Verwendung der Haupt- und Akzentfarben */
-
 .btn-primary {
-	background-color: var(--accent-color);
-	border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: all 0.3s ease; /* Hinzufügen von Übergangsanimationen */
 }
 
 .btn-primary:hover {
-	background-color: darken(var(--accent-color), 10%);
-	border-color: darken(var(--accent-color), 10%);
+    background-color: darken(var(--accent-color), 10%);
+    border-color: darken(var(--accent-color), 10%);
 }
 
 /* Navbar Stile */
 .navbar {
-	background-color: var(--main-color);
-	padding: 0.5em;
+    background-color: var(--main-color);
+    padding: 0.5em;
+    transition: all 0.3s ease; /* Hinzufügen von Übergangsanimationen */
 }
 
 .navbar-brand {
-	color: white;
-	font-size: 1.5em;
-	font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .navbar-brand img {
-	margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 
 .navbar-nav .nav-link {
-	color: white;
+    color: white;
+    transition: all 0.3s ease; /* Hinzufügen von Übergangsanimationen */
 }
 
 /* Ändert die Farbe des Links, wenn Sie mit der Maus darüber fahren */
 .navbar-nav .nav-link:hover {
-	color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Überschriften und Inputs sind standardmäßig für Mobilgeräte optimiert */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input {
-	font-size: 1rem; /* Beispielsweise, Sie können die Größen anpassen, wie Sie möchten */
+h1, h2, h3, h4, h5, h6, input {
+    font-size: 1rem;
 }
 
 /* Media Queries */
-
 /* Bei Tablets und kleinen Desktops */
 @media (min-width: 768px) {
-	h1 {
-		font-size: 1.5em;
-	}
-
-	h2 {
-		font-size: 1.3em;
-	}
-
-	input {
-		font-size: 1.1em;
-	}
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    input {
+        font-size: 1.1em;
+    }
 }
 
 /* Bei großen Desktops */
 @media (min-width: 1024px) {
-	h1 {
-		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1.6em;
-	}
-
-	input {
-		font-size: 1.2em;
-	}
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    input {
+        font-size: 1.2em;
+    }
 }
